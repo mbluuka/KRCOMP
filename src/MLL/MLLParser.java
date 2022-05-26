@@ -1,4 +1,4 @@
-// Generated from C:/Users/irlyk/Desktop/Compile 1.1/src/MLL\MLL.g4 by ANTLR 4.8
+// MEOW.g4 by ANTLR 4.8
 package MLL;
 
 import org.antlr.v4.runtime.*;
@@ -99,7 +99,7 @@ public class MLLParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "MLL.g4"; }
+	public String getGrammarFileName() { return "MEOW.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

@@ -1,4 +1,4 @@
-// Generated from C:/Users/irlyk/Desktop/Compile 1.1/src/MLL\MLL.g4 by ANTLR 4.8
+// MEOW.g4 by ANTLR 4.8
 package MLL;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 

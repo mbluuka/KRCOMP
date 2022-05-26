@@ -1,14 +1,9 @@
-grammar MLL;
+grammar MEOW;
 
 
 compilationUnit
     :   consts? functions? mainProg
 ;
-
-
-functions
-    :   DEF varname OPEN_PAREN parameterList CLOSE_PAREN block (DEF varname OPEN_PAREN parameterList CLOSE_PAREN block)*
-    ;
 
 
 block
@@ -28,6 +23,11 @@ callMethode
 
 mainProg
     : MAIN block
+    ;
+
+
+functions
+    :   DEF varname OPEN_PAREN parameterList CLOSE_PAREN block (DEF varname OPEN_PAREN parameterList CLOSE_PAREN block)*
     ;
 
 
