@@ -1,0 +1,19 @@
+main(){
+    int a = 1;
+    int b = 3;
+    if (a < b){
+        print('y');
+    } else {
+        print('n');
+    }
+    if (true and false){
+        print('y');
+    } else{
+        print('n');
+    }
+    if (true or false){
+        print('y');
+    } else{
+        print('n');
+    }
+}

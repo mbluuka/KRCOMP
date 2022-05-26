@@ -1,9 +1,0 @@
-main(){
-    int a = 0;
-    int b = 20039;
-    if (a > b) {
-        print(a);
-    } else {
-        print(b);
-    }
-    }

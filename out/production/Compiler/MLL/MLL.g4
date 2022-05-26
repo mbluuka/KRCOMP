@@ -148,50 +148,54 @@ type
     ;
 
 
-
-
-
 varname
    : LETTERS (LETTERS | NUMBER )*
    ;
 
-CLOSE_FIG_PAREN : '}';
-OPEN_FIG_PAREN : '{';
-CLOSE_PAREN : ')';
+
+
+
+DEF : 'def';
 OPEN_PAREN : '(';
-SEMICOLON : ';';
+CLOSE_PAREN : ')';
+OPEN_FIG_PAREN : '{';
+CLOSE_FIG_PAREN : '}';
 CONST : 'const';
+SEMICOLON : ';';
+MAIN : 'main()';
 PRINT : 'print';
 IF : 'if';
 ELSE : 'else';
-OR : 'or';
 AND : 'and';
+OR : 'or';
 
 FOR : 'for';
-WHILE : 'while';
-NEGATION_EQUAL : '!=';
-LESS_EQUAL : '<=';
-LOGIC_EQUAL : '==';
-MORE_EQUAL : '>=';
-MORE_ : '>';
-LESS_ : '<';
-EQUAL : '=';
 COMMA : ',';
-MOD : '%';
-SUB : '-';
-SUM : '+';
+WHILE : 'while';
+
+LOGIC_EQUAL : '==';
+NEGATION_EQUAL : '!=';
+MORE_ : '>';
+MORE_EQUAL : '>=';
+LESS_ : '<';
+LESS_EQUAL : '<=';
+EQUAL : '=';
+
 MULTIPLY : '*';
 DIVISION : '/';
+MOD : '%';
+SUM : '+';
+SUB : '-';
+
 TRUE : 'true';
 FALSE : 'false';
-CHAR : 'char';
 BACKSLASH : '\\';
+DOT : '.';
+
 INT : 'int';
+CHAR : 'char';
 FLOAT : 'float';
 BOOL : 'bool';
-DEF : 'def';
-MAIN : 'main()';
-DOT : '.';
 
 
 LETTERS
@@ -204,7 +208,6 @@ NUMBER
     ;
 
 
-// Whitespace and comments
 WS:                 [ \t\r\n\u000C]+ -> channel(HIDDEN);
 COMMENT:            '/*' .*? '*/'    -> channel(HIDDEN);
 LINE_COMMENT:       '//' ~[\r\n]*    -> channel(HIDDEN);

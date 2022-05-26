@@ -36,8 +36,6 @@ public class Compiler {
         // Сгенерировать константы
         if (consts != null) generateConst();
 
-
-
         mv=cw.visitMethod(Opcodes.ACC_PUBLIC, "<init>", "()V", null, null);
         mv.visitVarInsn(Opcodes.ALOAD, 0);
         mv.visitMaxs(1,1);
@@ -69,7 +67,8 @@ public class Compiler {
 
 
     public void generateMain() {
-        mv = cw.visitMethod(Opcodes.ACC_PUBLIC + Opcodes.ACC_STATIC, "main", "([Ljava/lang/String;)V", null, null);
+        mv = cw.visitMethod(Opcodes.ACC_PUBLIC + Opcodes.ACC_STATIC, "main",
+                "([Ljava/lang/String;)V", null, null);
         if (main != null) main.genJVM();
         else System.out.println("Statement is clear");
         mv.visitMaxs(1,1);

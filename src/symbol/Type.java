@@ -1,4 +1,5 @@
 package symbol;
+
 public class Type {
 
     String type;
@@ -25,7 +26,6 @@ public class Type {
         }
         return null;
     }
-
 
     public static boolean numeric(Type p) {
         if (p == Type.Char || p == Type.Int || p == Type.Float) return true;

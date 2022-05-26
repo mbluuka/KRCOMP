@@ -5,6 +5,7 @@ import CodeGen.ast.Id;
 import java.util.HashMap;
 
 public class Env {
+
     private HashMap<String, Id> table;
     protected Env prev;
 
